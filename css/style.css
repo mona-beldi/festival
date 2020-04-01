@@ -1,0 +1,104 @@
+body {
+background-color: #f5f9f5;
+font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  color: #214a88;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav ul {
+  border-bottom: 1px solid #98ebb6;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  border-bottom: 1px dashed #98ebb6;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  border-left: 8px solid #98ebb6;
+  padding-left: 10px;
+}
+
+h3 {
+  font-family: 'Bitter', serif;
+  border-bottom: 1px dashed #98ebb6;
+}
+
+h4 {
+  font-family: 'Bitter', serif;
+  border-bottom: 1px dashed #98ebb6;
+}
+
+h5 {
+  font-family: 'Bitter', serif;
+  border-bottom: 1px dashed #5ec8db;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.lienactif {
+  background-color: #d7edf1;
+}
+
+.alert-bleue {
+  background-color: #d7edf1;
+  border: 1px dashed #bde9f1;
+}
+
+.alert-verte {
+  background-color: #d6f1e1;
+  border: 1px dashed #bcefd1;
+}
+
+.selection_jour a {
+  color:#218838;
+  font-family: 'Bitter', serif;
+  background-color: #d6f1e1;
+}
+
+.selection_jour a:hover {
+  color:black;
+  font-family: 'Bitter', serif;
+  background-color: #d7edf1;
+}
+
+.btn-link {
+  color: #214a88;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+#faq_festival button {
+  background-color: #d7edf1;
+}
+
+.parcImg {
+  border-right: 3px solid #98ebb6;
+}
+
+.plus-info {
+  margin-top: 5px;
+}
+
+.card {
+  background-color: #d7edf1;
+}
+
+.carte-verte {
+  background-color: #d4eedf;
+}
+
+footer {
+  background-color: #ecf0ec;
+}

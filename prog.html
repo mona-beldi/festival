@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Les Films de Plein Air - Programmation</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Fira+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light mt-3">
+    <div class="container">
+      <a class="navbar-brand nomSite" href="index.html"><img class="img-fluid rounded" width="200" src="img/logo.png" alt="Projection festival"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="infos.html">Informations pratiques</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link lienactif pl-2" href="prog.html">Programmation</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Actualités</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container principal -->
+  <div class="container">
+
+    <!-- Accroche site -->
+    <section class="row align-items-center mt-2">
+      <div class="col-lg-6 p-2">
+        <img class="img-fluid rounded parcImg" src="img/pleinair.jpg" alt="Projection en plein air">
+      </div>
+      <div class="col-lg-6">
+        <h1>Programmation</h1>
+        <p class="lead">
+          Découvrez ci-dessous l'intégralité de notre sélection, jour par jour.
+          N'hésitez-pas à vous pré-inscrire, afin que nous puissions vous garantir une place et préparer au mieux l'organisation du festival.
+        </p>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target=".formulaire-resa">Formulaire de réservation</button>
+      </div>
+    </section>
+
+    <!-- Le formulaire -->
+    <div class="modal fade formulaire-resa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">Formulaire de réservation</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <a title="Logiciel billetterie en ligne" href="https://weezevent.com/?c=sys_widget" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=429982&lg_billetterie=1&code=25299&width_auto=1&color_primary=218838"
+              data-width="650" data-height="600" data-id="429982" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>
+            <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Le programme -->
+    <div class="selection_jour">
+      <ul class="row nav text-uppercase text-center mt-2" id="myTab" role="tablist">
+        <li class="col-sm-3 col-6 nav-item p-2">
+          <a class="nav-link active" id="nav-jeudi-tab" data-toggle="tab" href="#nav-jeudi" role="tab" aria-controls="nav-jeudi" aria-selected="true">Jeudi</a>
+        </li>
+        <li class="col-sm-3 col-6 nav-item p-2">
+          <a class="nav-link" id="nav-vendredi-tab" data-toggle="tab" href="#nav-vendredi" role="tab" aria-controls="nav-vendredi" aria-selected="false">Vendredi</a>
+        </li>
+        <li class="col-sm-3 col-6 nav-item p-2">
+          <a class="nav-link" id="nav-samedi-tab" data-toggle="tab" href="#nav-samedi" role="tab" aria-controls="nav-samedi" aria-selected="false">Samedi</a>
+        </li>
+        <li class="col-sm-3 col-6 nav-item p-2">
+          <a class="nav-link" id="nav-dimanche-tab" data-toggle="tab" href="#nav-dimanche" role="tab" aria-controls="nav-dimanche" aria-selected="false">Dimanche</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contenant du programme -->
+    <div class="tab-content" id="nav-tabContent">
+
+      <!-- JEUDI -->
+      <div class="tab-pane fade show active" id="nav-jeudi" role="tabpanel" aria-labelledby="nav-jeudi-tab">
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Mulholand Drive</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Jeudi 5 août - 18h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par David Lynch - Sorti le 21 novembre 2001
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        À Hollywood, durant la nuit, Rita, une jeune femme, devient amnésique suite à un accident de voiture sur la route de Mulholland Drive. Elle fait la rencontre de Betty Elms, une actrice en devenir qui vient juste de débarquer
+                        à Los Angeles. Aidée par celle-ci, Rita tente de retrouver la mémoire ainsi que son identité.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Naomi Watts</li>
+                          <li class="list-inline-item badge badge-secondary">Laura Harring</li>
+                          <li class="list-inline-item badge badge-secondary">Justin Theroux</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-info">Fantastique</li>
+                          <li class="list-inline-item badge badge-dark">Thriller</li>
+                          <li class="list-inline-item badge badge-light">Drame</li>
+                          <li class="list-inline-item badge badge-warning">Bizarre</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Aussi étrange qu'hypnotisant, ce film de David Lynch ne peut laisser indifférent.
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=28682.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/mulholand-affiche.jpg" class="card-img" alt="Affiche Mulholand Drive">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card carte-verte mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Les Garçons Sauvages</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Jeudi 5 août - 20h</h6>
+                    <div class="alert alert-verte" role="alert">
+                      Réalisé par Bertrand Mandico - Sorti le 28 février 2017
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Début du vingtième siècle, cinq adolescents de bonne famille épris de liberté commettent un crime sauvage. Ils sont repris en main par le Capitaine, le temps d'une croisière répressive sur un voilier. Les garçons se mutinent.
+                        Ils échouent sur une île sauvage où se mêlent plaisir et végétation luxuriante. La métamorphose peut commencer…
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Vimala Pons</li>
+                          <li class="list-inline-item badge badge-secondary">Anaël Snoek</li>
+                          <li class="list-inline-item badge badge-secondary">Pauline Lorillard</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-info">Fantastique</li>
+                          <li class="list-inline-item badge badge-warning">Bizarre</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Une véritable bouffée d'air frais dans le paysage audiovisuel français... À ne pas manquer !
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=246506.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/garcons-affiche.jpg" class="card-img" alt="Affiche Les Garçons Sauvages">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Vital</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Jeudi 5 août - 22h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Shinya Tsukamoto - Sorti le 24 janvier 2006
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Après un tragique accident qui lui a enlevé sa fiancée, Hiroshi Takagi a perdu la mémoire. Seule lui reste sa passion pour la médecine. Il entame alors des études dans la voie médicale, mais se retrouve confronté au corps de
+                        son amie sur la table de dissection.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Tadanobu Asano</li>
+                          <li class="list-inline-item badge badge-secondary">Nami Tsukamoto</li>
+                          <li class="list-inline-item badge badge-secondary">Toulou Kiki</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-light">Drame</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Un drame morbide et poétique qui montre une facette différente de l'œuvre de Tsukamoto.
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=58288.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/vital-affiche.jpg" class="card-img" alt="Affiche Vital">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VENDREDI -->
+      <div class="tab-pane fade" id="nav-vendredi" role="tabpanel" aria-labelledby="nav-vendredi-tab">
+        <div class="row mt-3">
+
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Clerks</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Vendredi 6 août - 18h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Kevin Smith - Sorti en 1994
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Dante est caissier dans une épicerie du New Jersey. Randal est employé dans le vidéo-club voisin. Les deux amis débattent regulièrement des sujets les plus divers. Et parfois, la routine laisse place à des journées pour le
+                        moins étonnantes...
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Brian O'Halloran</li>
+                          <li class="list-inline-item badge badge-secondary">Jeff Anderson</li>
+                          <li class="list-inline-item badge badge-secondary">Jason Mewes</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genre</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-success">Comédie</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Une comédie décapatante qui marque le début de carrière de Kevin Smith et pose toutes les bases de son humour.
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=10141.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/clerks-affiche.jpg" class="card-img" alt="Affiche Clerks">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card carte-verte mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">L'Au-delà</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Vendredi 6 août - 20h</h6>
+                    <div class="alert alert-verte" role="alert">
+                      Réalisé par Lucio Fulci - Sorti en 1981
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Une jeune femme hérite d'un hôtel dans la Nouvelle Orléans. Alors qu'elle entreprend des travaux de rénovation, des phénomènes étranges font de sa vie un véritable enfer.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Catriona MacColl</li>
+                          <li class="list-inline-item badge badge-secondary">David Warbeck</li>
+                          <li class="list-inline-item badge badge-secondary">Cinzia Monreale</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genre</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-danger">Horreur</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Un grand classique du cinéma gore italien ! Aussi beau qu'il en est graphiquement très violent...
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=49613.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/beyond-affiche.jpg" class="card-img" alt="Affiche L'Au-delà">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Seul contre tous</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Vendredi 6 août - 22h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Gaspar Noé - Sorti le 17 février 1999
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        La dérive d'un ex-boucher chevalin, d'abord à Lille, puis à Paris où il s'installe à l'hôtel de l'Avenir et tente de refaire sa vie. Peu à peu, il se replie sur lui-même. Sans un sou et avec pour seul compagnon un révolver
+                        chargé de trois balles, il ne voit plus clairement quel est le moteur de sa vie. Au bout du tunnel, l'imprévu surgit toujours.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Philippe Nahon</li>
+                          <li class="list-inline-item badge badge-secondary">Blandine Lenoir</li>
+                          <li class="list-inline-item badge badge-secondary">Frankie Pain</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genre</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-light">Drame</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Ce premier long-métrage de Gaspar Noé est une vraie claque qui ne peut tout simplement pas laisser indifférent. Attention, le moral en prend un coup...
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=105494.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/seulcontretous-affiche.jpg" class="card-img" alt="Affiche Seul contre tous">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAMEDI -->
+      <div class="tab-pane fade" id="nav-samedi" role="tabpanel" aria-labelledby="nav-samedi-tab">
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">L'Île aux Chiens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Samedi 7 août - 18h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Wes Anderson - Sorti le 11 avril 2018
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        En raison d’une épidémie de grippe canine, le maire de Megasaki ordonne la mise en quarantaine de tous les chiens de la ville, envoyés sur une île qui devient alors l’Ile aux Chiens. Le jeune Atari, 12 ans, vole un avion et
+                        se rend sur l’île pour rechercher son fidèle compagnon, Spots. Aidé par une bande de cinq chiens intrépides et attachants, il découvre une conspiration qui menace la ville.
+                      </dd>
+                      <dt class="col-sm-3">Doubleurs</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Bryan Cranston</li>
+                          <li class="list-inline-item badge badge-secondary">Edward Norton</li>
+                          <li class="list-inline-item badge badge-secondary">Jeff Goldblum</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genre</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-primary">Aventure</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Aussi beau que brillant et bien écrit, ce dernier film de Wes Anderson est rapidement devenu un incontournable du cinéma d'animation !
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=241680.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/chiens-affiche.jpg" class="card-img" alt="Affiche L'île aux Chiens">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card carte-verte mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Suspiria</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Samedi 7 août - 20h</h6>
+                    <div class="alert alert-verte" role="alert">
+                      Réalisé par Dario Argento - Sorti le 18 mai 1977
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Suzy, une jeune Américaine, débarque à Fribourg pour suivre des cours dans une académie de danse prestigieuse. À peine arrivée, l'atmosphère du lieu, étrange et inquiétante, surprend la jeune fille. Et c'est là qu'une jeune
+                        élève est spectaculairement assassinée. Suzy apprend alors que l'académie était autrefois la demeure d'une terrible sorcière surnommée la Mère des Soupirs. Et si l'école était encore sous son emprise ?
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Jessica Harper</li>
+                          <li class="list-inline-item badge badge-secondary">Joan Bennett</li>
+                          <li class="list-inline-item badge badge-secondary">Stefania Casini</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-danger">Horreur</li>
+                          <li class="list-inline-item badge badge-dark">Thriller</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Dario Argento nous présente ici son film le plus soigné : c'est un festival de sang et de couleurs. Mais la musique n'est pas en reste avec une excellente OST du groupe Goblin !
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=12704.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/suspiria-affiche.jpg" class="card-img" alt="Affiche Suspiria">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">L'Antre de la folie</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Samedi 7 août - 22h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par John Carpenter - Sorti le 8 février 1995
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Pour retrouver un auteur de best-sellers d'épouvante brusquement disparu, John Trent, détéctive, va pénétrer dans l'univers romanesque et épouvantable de l'écrivain.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Sam Neill</li>
+                          <li class="list-inline-item badge badge-secondary">Jürgen Prochnow</li>
+                          <li class="list-inline-item badge badge-secondary">David Warner</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-danger">Horreur</li>
+                          <li class="list-inline-item badge badge-dark">Thriller</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Sans aucun doute l'une des plus pertinentes adaptations de Lovecraft au cinéma, et aussi l'un des derniers grands films du maître de l'horreur, John Carpenter !
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=11541.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/antre-affiche.jpg" class="card-img" alt="Affiche L'Antre de la folie">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIMANCHE -->
+      <div class="tab-pane fade" id="nav-dimanche" role="tabpanel" aria-labelledby="nav-dimanche-tab">
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Hana-Bi</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dimanche 8 août - 18h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Takeshi Kitano - Sorti le 5 novembre 1997
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Nishi est policier. Son épouse est atteinte d’un cancer en phase terminale. Suite à une fusillade son partenaire Horibe devient paraplégique et un autre de ses collègues est tué. Nishi démissionne alors afin de commettre un
+                        casse pour rembourser d’importantes dettes contractées auprès des yakuzas et, finalement, chercher un sens à sa vie…
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Takeshi Kitano</li>
+                          <li class="list-inline-item badge badge-secondary">Tetsu Watanabe</li>
+                          <li class="list-inline-item badge badge-secondary">Kayoko Kishimoto</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genre</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-light">Drame</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Kitano au sommet de son art, avec toujours ce mélange de poésie et de violence parfaitement équilibré.
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=9279.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/hanabi-affiche.jpg" class="card-img" alt="Affiche Hana-Bi">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card carte-verte mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Videodrome</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dimanche 8 août - 20h</h6>
+                    <div class="alert alert-verte" role="alert">
+                      Réalisé par David Cronenberg - Sorti le 16 mai 1984
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Le patron d'une petite chaîne érotique sur le câble capte par hasard un mystérieux programme-pirate dénommé Vidéodrome, qui met en scène tortures et sévices sexuels. Son visionnage provoque peu à peu des hallucinations et
+                        autres altérations physiques. La frontière entre réalité et univers télévisuel devient bien mince, et la folie guette...
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">James Woods</li>
+                          <li class="list-inline-item badge badge-secondary">Sonja Smits</li>
+                          <li class="list-inline-item badge badge-secondary">Deborah Harry</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-light">Horreur</li>
+                          <li class="list-inline-item badge badge-info">Fantastique</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Le maître du <i>body-horror</i> à son sommet. Un film intemporel et vertigineux.
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=6055.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/videodrome-affiche.jpg" class="card-img" alt="Affiche Videodrome">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Possession</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dimanche 8 août - 22h</h6>
+                    <div class="alert alert-bleue" role="alert">
+                      Réalisé par Andrzej Zulawski - Sorti le 27 mai 1981
+                    </div>
+                    <dl class="row">
+                      <dt class="col-sm-3">Synopsis</dt>
+                      <dd class="col-sm-9">
+                        Rentrant d'un long voyage, Marc retrouve à Berlin sa femme Anna et son fils, Bob. Mais rapidement, il se rend compte que le comportement de sa femme a changé. Prise de violentes crises, elle quitte le domicile. Lorsqu'elle
+                        disparaît, Marc engage un détective qui découvre bientôt qu'Anna s'est réfugiée dans une étrange demeure où semble se cacher une créature surgie des
+                        ténèbres.
+                      </dd>
+                      <dt class="col-sm-3">Avec</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-secondary">Isabelle Adjani</li>
+                          <li class="list-inline-item badge badge-secondary">Sam Neill</li>
+                          <li class="list-inline-item badge badge-secondary">Margit Carstensen</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Genres</dt>
+                      <dd class="col-sm-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item badge badge-light">Drame</li>
+                          <li class="list-inline-item badge badge-danger">Horreur</li>
+                        </ul>
+                      </dd>
+                      <dt class="col-sm-3">Notre avis</dt>
+                      <dd class="col-sm-9">
+                        Isabelle Adjani crève l'écran dans ce chef-d'œuvre de l'horreur, et pour cause : c'est un rôle qui l'a traumatisée à vie...
+                      </dd>
+                      <dt class="col-sm-3">Fiche Allociné</dt>
+                      <dd class="col-sm-9">
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=274.html" target="_blank"><img src="img/logo-allocine.png" width="100" alt="Fiche Allociné"></a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-auto">
+                  <img src="films/possession-affiche.jpg" class="card-img" alt="Affiche Possession">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- /container -->
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid">
+    <footer class="row px-3 pt-3 mt-3">
+      <div class="col-sm-6 text-right d-none d-sm-block">
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="infos.html">Informations pratiques</a>
+          </li>
+          <li>
+            <a href="prog.html">Programmation</a>
+          </li>
+          <li>
+            <a href="news.html">Actualités</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul class="list-unstyled">
+          <li>
+            Association Films de Plein Air | 2019 ©
+          </li>
+          <li>
+            <a href="http://www.facebook.com" target="_blank"><i class="lead fab fa-facebook-square"></i></a>
+            <a href="http://www.instagram.com" target="_blank"><i class="lead fab fa-instagram"></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="lead fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="mentions.html">Mentions légales</a>
+          </li>
+          <li>
+            Projet fictif réalisé dans le cadre d'une formation.
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- JS bootstrap et jquery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
